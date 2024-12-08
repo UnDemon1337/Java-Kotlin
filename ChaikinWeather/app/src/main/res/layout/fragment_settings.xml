@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/close_ikon"
+        android:padding="10dp"
+        android:src="@drawable/close_24px"
+        android:tint="@color/sonic_silver"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSettings"
+        app:layout_constraintDimensionRatio="w, 1:1"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textPushNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/push_notifications"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchPushNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/textPushNotifications"
+        app:layout_constraintStart_toEndOf="@id/textPushNotifications"
+        app:layout_constraintTop_toTopOf="@id/textPushNotifications"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textTemperatureUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_of_temperature_unit"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/switchPushNotifications"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTemperatureUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/textTemperatureUnit"
+        app:layout_constraintStart_toEndOf="@id/textTemperatureUnit"/>
+
+    <TextView
+        android:id="@+id/textLocationPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_permission"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerTemperatureUnit"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchLocationPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/textLocationPermission"
+        app:layout_constraintStart_toEndOf="@id/textLocationPermission"
+        app:layout_constraintTop_toTopOf="@id/textLocationPermission"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/switchLocationPermission"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/textTheme"
+        app:layout_constraintStart_toEndOf="@id/textTheme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

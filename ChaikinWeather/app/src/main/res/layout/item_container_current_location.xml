@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textCurrentDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/sonic_silver"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/imageMyLocation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Today 05.12" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/Imagelocation"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/location_on_24px"
+        android:tint="@color/sonic_silver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCurrentDate"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textCurrentLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sonic_silver"
+        android:layout_marginStart="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginEnd="5dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/Imagelocation"
+        app:layout_constraintStart_toEndOf="@id/Imagelocation"
+        app:layout_constraintTop_toTopOf="@id/Imagelocation"
+        tools:text="San Francisco" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageMyLocation"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/my_location_24px"
+        android:tint="@color/sonic_silver"
+        app:layout_constraintStart_toEndOf="@id/textCurrentLocation"
+        app:layout_constraintBottom_toBottomOf="@id/textCurrentLocation"
+        app:layout_constraintTop_toTopOf="@id/textCurrentLocation" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageMySettings"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/settings_24px"
+        android:tint="@color/sonic_silver"
+        app:layout_constraintBottom_toBottomOf="@id/textCurrentDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textCurrentDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

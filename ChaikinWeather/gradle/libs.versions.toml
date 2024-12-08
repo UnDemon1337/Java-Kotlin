@@ -1,0 +1,54 @@
+[versions]
+agp = "8.7.3"
+kotlin = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+
+#okhttp = "4.9.0"
+#navigation = "2.5.3"
+#lifecycle = "2.8.7"
+coil = "2.4.0"
+#sdp = "1.1.0"
+#ssp = "1.1.0"
+navigationFragmentKtx = "2.8.4"
+navigationUiKtx = "2.8.4"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version = "2.9.0" }
+retrofitConverterGson = { group = "com.squareup.retrofit2", name = "converter-gson", version = "2.9.0" }
+#okhttp_logging_interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+#navigation_fragment_ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+#navigation_ui_ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+#lifecycle_viewmodel_ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil"}
+#sdp_android = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp" }
+#ssp_android = { group = "com.intuit.ssp", name = "ssp-android", version.ref = "ssp" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+play-services-location = "com.google.android.gms:play-services-location:21.0.1"
+koin-android = { group = "io.insert-koin", name = "koin-android", version = "3.4.2" }
+koin-core = { group = "io.insert-koin", name = "koin-core", version = "3.4.2" }
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version = "1.1.0" }
+gson = { group = "com.google.code.gson", name = "gson", version = "2.10.1" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
